@@ -14,8 +14,8 @@ generator = new SeamlessNoise(); // random seed
 ```
 To retrieve the noise value for given `(x,y)` call `noise2D` on the instance. `tileSize` determines the width & height of the tile, `scale` determines the scale of the noise (larger value - larger noise).
 ```javascript
-value = generator(x,y,tileSize,scale);
-value = generator(0,0,500,2);
+value = generator.noise2D(x,y,tileSize,scale);
+value = generator.noise2D(0,0,500,2);
 ```
 # example
 Generating a simple noise tile might look something like this:
